@@ -62,7 +62,7 @@ object QueryDSLPlugin extends AutoPlugin {
   import autoImport._
 
   override def projectSettings: Seq[Def.Setting[_]] =  Seq[Def.Setting[_]](
-    queryDSLVersion := "3.6.2",
+    queryDSLVersion := "4.0.3",
     libraryDependencies <++= (queryDSLVersion in QueryDSL)(version =>
       Seq(
         //add querydsl-apt to dependencies in QueryDSL
